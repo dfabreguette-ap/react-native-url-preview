@@ -2,7 +2,7 @@ import React from 'react';
 import {getLinkPreview} from 'link-preview-js';
 import PropTypes from 'prop-types';
 import {Image, Linking, Platform, Text, TouchableOpacity, View, ViewPropTypes} from 'react-native';
-import stylePropTypes from 'react-style-proptype';
+var stylePropType = require('react-style-proptype');
 
 const REGEX = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/g;
 
