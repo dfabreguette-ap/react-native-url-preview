@@ -24,10 +24,10 @@
     "react-native-windows": "0.41.0-rc.1"
   },
   "dependencies": {
-    "link-preview-js": "2.0.4"
+    "link-preview-js": "2.0.4",
+    "react-style-proptype": "^3.2.2"
   },
   "devDependencies": {
-    "react-style-proptype": "^3.2.2"
   },
   "repository": {
     "type": "git",
