@@ -2,6 +2,7 @@ import React from 'react';
 import {getLinkPreview} from 'link-preview-js';
 import PropTypes from 'prop-types';
 import {Image, Linking, Platform, Text, TouchableOpacity, View, ViewPropTypes} from 'react-native';
+import stylePropTypes from 'react-style-proptype';
 
 const REGEX = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/g;
 
@@ -196,10 +197,10 @@ RNUrlPreview.propTypes = {
   onLoad: PropTypes.func,
   onError: PropTypes.func,
   text: PropTypes.string,
-  containerStyle: ViewPropTypes ? ViewPropTypes.style : PropTypes.object,
-  imageStyle: ViewPropTypes ? ViewPropTypes.style : PropTypes.object,
-  faviconStyle: ViewPropTypes ? ViewPropTypes.style : PropTypes.object,
-  textContainerStyle: ViewPropTypes ? ViewPropTypes.style : PropTypes.object,
+  containerStyle: stylePropTypes,
+  imageStyle: stylePropTypes,
+  faviconStyle: stylePropTypes,
+  textContainerStyle: stylePropTypes,
   title: PropTypes.bool,
   description: PropTypes.bool,
   titleStyle: Text.propTypes ? Text.propTypes.style : PropTypes.object,
